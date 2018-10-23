@@ -5,8 +5,10 @@
 #include <unistd.h>
 
 int main(){
-  open("Test",O_RDONLY);
-  read(100,"Test",20);
+  int fd1 = open("Test",O_RDONLY);
+  read(fd1,0,20);
+
+  
   close(100);
 
 
